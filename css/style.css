@@ -1,16 +1,6 @@
-/* Enter your Styles below! */
-
-
-
-
-/* ensures that your images stretch the width of their containers */
-
-a { 
-	color: red;
+a {
 	text-decoration: none;
-	 }
-a:hover { color: black; }
-
+}
 
 .header {
 	display:grid;
@@ -22,46 +12,71 @@ a:hover { color: black; }
 
 .logo {
 	width:400px;
-	align-items: left;
 	padding-left: 10px;
 }
 
-.main-nav {
-	align-content: : right;
-	display:inline-block;
-}
-
-.nav-options {
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-
 .grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 40px;
-	width: 20px;
-	margin: auto;
+	align-content: center;
 }
 
-.grid div {
-	background-color: #ccc;
+.main-nav {
+	width:500px;
+	padding-top:7px;
+	text-align: right;
+}
+
+.nav-words {
+	font-family: urw-din, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	padding-top: 8px
+	display:inline;
 	padding: 20px;
 }
 
-.main-nav {
-	width:300px;
+.nav-words {
+	color:#fff;
+}
+
+.nav-words:hover {
+	background-color:white;
+	color:rgb(242,109,99);
+}
+
+.dropdown-content {
+	display:none;
+}
+
+.nav-words:hover .dropdown-content {
+	display:block;
+}
+
+blockquote {
+	font-family: rift, sans-serif;
+	font-size: 5vw;
+	font-weight: 700;
+	text-align: center;
+	color: rgb(242,109,99);
+	padding-top:50px;
+	padding-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 .social-media {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	width 1000px;
 	background-color: rgb(242,109,99);
+	text-align: right;
+	padding-right: 5px;
+	position:bottom-page;
 }
 
 .media-logos {
-	width: 30px;
+	width: 20px;
 	align-content: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .product {
