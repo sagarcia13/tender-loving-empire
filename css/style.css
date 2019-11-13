@@ -1,125 +1,175 @@
-a {
-	text-decoration: none;
-}
-
-.header {
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	padding-top: 10px;
-	background-color: rgb(242,109,99);
-	padding-bottom: 8px;
-}
-
-.logo {
-	width:400px;
-	padding-left: 10px;
-}
-
-.grid {
-	align-content: center;
-}
-
-.main-nav {
-	width:500px;
-	padding-top:7px;
-	text-align: right;
-}
-
-.nav-words {
-	font-family: urw-din, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: white;
-	padding-top: 8px
-	display:inline;
-	padding: 20px;
-}
-
-.nav-words {
-	color:#fff;
-}
-
-.nav-words:hover {
-	background-color:white;
-	color:rgb(242,109,99);
-}
-
-.dropdown-content {
-	display:none;
-}
-
-.nav-words:hover .dropdown-content {
-	display:block;
-}
-
-blockquote {
-	font-family: rift, sans-serif;
-	font-size: 5vw;
-	font-weight: 700;
-	text-align: center;
-	color: rgb(242,109,99);
-	padding-top:50px;
-	padding-bottom: 50px;
-	padding-right: 50px;
-	padding-left: 50px;
-}
-
-.social-media {
-	width 1000px;
-	background-color: rgb(242,109,99);
-	text-align: right;
-	padding-right: 5px;
-	position:bottom-page;
-}
-
-.media-logos {
-	width: 20px;
-	align-content: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.product {
-	width:100px;
-}
-
-.record {
-	width:200px;
-}
-
-.record-page{
-	padding-left: 415px;
-	padding-right: 415px;
-}
-
-.record-slideshow {
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-@media only screen and (min-width: 768px) 
-	{body {
-		background-color:white;
+@media only screen and (min-width: 0px) 
+	{
+	body {
+		background-color:pink;
 		}
+	a {
+		text-decoration: none;
+	}
+	.header {
+		background-color: rgb(242,109,99);
+		}
+
+	.logo {
+		padding-top:10px;
+		padding-bottom: 5px;
+	}
 	.grid {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-gap: 40px;
 		width: 100%;
 		margin: auto;
-}	
+		}
+	.logo {
+		text-align:left;
+		width:87vw;
+		padding-left:10px;
+		}	
+	.main-nav {
+		text-align:center;
+		padding-bottom: 10px;
+		display:none;
+		}
+	.circle-nav {
+		width:100vw;
+		text-align:center;
+		}
+	.media-logos {
+		width:10vw;
 	}
 
-@media only screen and (min-width: 1024px) 
-	{body {
-		background-color:white;
-		}}
+	blockquote {
+		font-size:40px;
+		font-family: rift, sans-serif;
+		font-weight: 700;
+		text-align: center;
+		color: rgb(242,109,99);
+		padding-top:30px;
+		padding-right: 5vw;
+		padding-left: 5vw;
+	}
+		}
+	.nav-words {
+		font-family: urw-din, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size:20px;
+		color: white;
+		padding-top: 8px;
+		display:inline;
+		padding: 20px;
+		margin:15px;
+		}
+	.hamburger{
+		  background:none;
+		  position:absolute;
+		  top:0;
+		  right:0;
+		  line-height:9vw;
+		  padding:1vw 2.5vw 0vw 1vw;
+		  color:#fff;
+		  border:0;
+		  font-size:7vw;
+		  font-weight:bold;
+		  cursor:pointer;
+		  outline:none;
+	}
+	.hamburger .nav-words{
+		color:rgb(242,109,99);
+	}
+}
 
-@media only screen and (min-width: 1200px) 
+@media only screen and (min-width: 500px) 
 	{body {
+		background-color:red;
+		}
+	.nav-words:hover {
 		background-color:white;
-		}}
+		color:rgb(242,109,99);
+	}
+		a {
+		text-decoration: none;
+	}
 
+	.header {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		padding-top: 10px;
+		background-color: rgb(242,109,99);
+		padding-bottom: 8px;
+	}
+
+	.main-nav {
+		padding-top:7px;
+		padding-right:90px;
+		text-align: right;
+	}
+
+	.nav-words {
+		font-family: urw-din, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color: white;
+		padding-top: 8px
+		display:inline;
+		padding: 20px;
+	}
+
+	.nav-words {
+		color:#fff;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.circle-nav {
+		width:400px;
+		text-align:center;
+
+	}
+
+	blockquote {
+		font-family: rift, sans-serif;
+		font-size: 5vw;
+		font-weight: 700;
+		text-align: center;
+		color: rgb(242,109,99);
+		padding-top:50px;
+		padding-bottom: 50px;
+		padding-right: 5vw;
+		padding-left: 5vw;
+	}
+
+	.social-media {
+		width: 1000px;
+		background-color: rgb(242,109,99);
+		text-align: right;
+		padding-right: 5px;
+		position:bottom-page;
+	}
+
+	.media-logos {
+		width: 20px;
+		align-content: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.product {
+		width:100px;
+	}
+
+	.record {
+		width:200px;
+	}
+
+	.record-page{
+		padding-left: 415px;
+		padding-right: 415px;
+	}
+}
 
 /*
 font-family: 'Mansalva', cursive;
