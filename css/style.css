@@ -1,7 +1,7 @@
 @media only screen and (min-width: 0px) 
 	{
 	body {
-		background-color:pink;
+		background-color:yellow;
 		}
 	a {
 		text-decoration: none;
@@ -24,11 +24,6 @@
 		text-align:left;
 		width:87vw;
 		padding-left:10px;
-		}	
-	.main-nav {
-		text-align:center;
-		padding-bottom: 10px;
-		display:none;
 		}
 	.circle-nav {
 		width:100vw;
@@ -37,7 +32,6 @@
 	.media-logos {
 		width:10vw;
 	}
-
 	blockquote {
 		font-size:40px;
 		font-family: rift, sans-serif;
@@ -47,132 +41,158 @@
 		padding-top:30px;
 		padding-right: 5vw;
 		padding-left: 5vw;
-	}
 		}
-	.nav-words {
-		font-family: urw-din, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size:20px;
-		color: white;
-		padding-top: 8px;
-		display:inline;
-		padding: 20px;
-		margin:15px;
+	.icon {
+	    position: fixed;
+	    cursor: pointer;
+	    top: 5%;
+	    right: 0%;
+	    width: 40px;
+	    height: 45px;
+	    transform: translate(-50%, -50%);
+	    display: block;
+	    z-index: 1000;
 		}
-	.hamburger{
-		  background:none;
-		  position:absolute;
-		  top:0;
-		  right:0;
-		  line-height:9vw;
-		  padding:1vw 2.5vw 0vw 1vw;
-		  color:#fff;
-		  border:0;
-		  font-size:7vw;
-		  font-weight:bold;
-		  cursor:pointer;
-		  outline:none;
-	}
-	.hamburger .nav-words{
-		color:rgb(242,109,99);
-	}
-}
 
-@media only screen and (min-width: 500px) 
-	{body {
-		background-color:red;
+	.hamburger {
+	    width: 40px;
+	    height: 4px;
+	    line-height: 70px;
+	    background: white;
+	    border-radius: 5px;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+	    transition: .5s;
 		}
-	.nav-words:hover {
-		background-color:white;
-		color:rgb(242,109,99);
-	}
-		a {
-		text-decoration: none;
-	}
+	.hamburger:before,
+	.hamburger:after {
+	    content: '';
+	    position: absolute;
+	    width: 40px;
+	    height: 4px;
+	    background: white;
+	    border-radius: 5px;
+	    transition: .5s;
+		}
 
-	.header {
-		display:grid;
-		grid-template-columns: 1fr 1fr;
-		padding-top: 10px;
-		background-color: rgb(242,109,99);
-		padding-bottom: 8px;
-	}
+	.hamburger:before {
+	    top: -10px;
+		}
 
-	.main-nav {
-		padding-top:7px;
-		padding-right:90px;
-		text-align: right;
-	}
+	.hamburger:after {
+	    top: 10px;
+		}
 
-	.nav-words {
-		font-family: urw-din, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		color: white;
-		padding-top: 8px
-		display:inline;
-		padding: 20px;
-	}
+	.icon.active .hamburger {
+	    background: rgba(0,0,0,0);
+	    box-shadow: 0 2px 5px rgba(0,0,0,0);
+		}
 
-	.nav-words {
-		color:#fff;
-	}
+	.icon.active .hamburger:before {
+	    top: 0;
+	    transform: rotate(45deg);
+		}
 
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
+	.icon.active .hamburger:after {
+	    top: 0;
+	    transform: rotate(135deg);
+		}
 
+	.menu-mobile {
+	    background-color: #efefef;
+	    height: 100vh;
+	    position: fixed;
+	    width: 100%;
+	    z-index: 999;
+	    padding-top: 150px;
+	    font-family: 'Helvetica', sans-serif;
+	    text-align: center;
+		}
+
+	.menu-mobile, .menu-mobile a {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-evenly;
+		}
+	.menu-mobile a {
+	    clear: right;
+	    text-decoration: none;
+	    color: #333;
+	    height: 70px;
+	    line-height: 70px;
+		}
+	.menu-mobile a:hover {
+	    color: red;
+		}
+
+	.desktop, .menu-desktop, .menu-mobile {
+	        display: none;
+	    }
 	.circle-nav {
-		width:400px;
-		text-align:center;
-
-	}
-
-	blockquote {
-		font-family: rift, sans-serif;
-		font-size: 5vw;
-		font-weight: 700;
-		text-align: center;
-		color: rgb(242,109,99);
-		padding-top:50px;
-		padding-bottom: 50px;
-		padding-right: 5vw;
-		padding-left: 5vw;
-	}
-
-	.social-media {
-		width: 1000px;
-		background-color: rgb(242,109,99);
-		text-align: right;
-		padding-right: 5px;
-		position:bottom-page;
-	}
-
-	.media-logos {
-		width: 20px;
+		width:300px;
 		align-content: center;
-		padding-top: 5px;
-		padding-bottom: 5px;
 	}
 
-	.product {
-		width:100px;
+	footer {
+		background-color: rgb(242,109,99);
+		}
+	.media-logos {
+		width:15px;
 	}
-
 	.record {
+		width:100px;
+		}
+
+	.titles {
+		text-align: center;
+		font-family: rift, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		color:rgb(242,109,99);
+		padding-top:5%;
+		padding-bottom:5%;
+		font-size:250%;
+		}
+	.artists {
+		font-family: urw-din, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		text-align: center;
+		color:rgb(242,109,99);
+		line-height: 125%;
+		font-size: 100%;
+		padding-bottom: 3%;
+	}
+	.product {
 		width:200px;
 	}
-
-	.record-page{
-		padding-left: 415px;
-		padding-right: 415px;
+	.item-description {
+		text-align: center;
 	}
+	.item-name {
+		font-family: urw-din, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 13px;
+		color: rgb(242,109,99);
+	}
+
+	.price {
+		font-family: urw-din, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size:15px;
+		color: rgb(242,109,99);
+	}
+	.brand {
+		font-family: urw-din, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size:13px;
+		color: rgb(242,109,99);
+	}
+
 }
 
-/*
-font-family: 'Mansalva', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Indie Flower', cursive;
-*/
