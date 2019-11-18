@@ -1,4 +1,4 @@
-@media only screen and (min-width: 0px) 
+@media only screen and (max-width: 410px) 
 	{
 	body {
 		background-color:yellow;
@@ -195,4 +195,125 @@
 	}
 
 }
+
+
+@media only screen and (min-width: 411px) {
+	body{
+		}
+	.menu-mobile {
+		display: none;
+		}
+	section {
+		background-color: rgb(242,109,99);
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		}
+	.logo {
+		width: 30vw;
+		padding-left: 1vw;
+		padding-top: 1vw;
+		padding-bottom: 1vw
+		}
+	.menu-desktop {
+		text-align: right;
+		padding-right:2vw;
+		padding-top: 1.7vw;
+	}
+	.options {
+		text-decoration: none;
+		color:white;
+		font-family: urw-din, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		padding-left: 1vw;
+		padding-right: 1vw;
+		padding-bottom:5vw;
+		padding-top: 5vw;
+	}
+	.options:hover {
+		text-decoration: none;
+		color:white;
+		font-family: urw-din, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color:rgb(242,109,99);
+		background-color: white;
+	}
+	blockquote {
+		font-size:70px;
+		font-family: rift, sans-serif;
+		font-weight: 700;
+		text-align: center;
+		color: rgb(242,109,99);
+		padding-top:30px;
+		padding-right: 5vw;
+		padding-left: 5vw;
+	}
+		.circle-nav {
+		width:300px;
+		align-content: center;
+	}
+
+	footer {
+		background-color: rgb(242,109,99);
+		}
+	.media-logos {
+		width:15px;
+	}
+	.record {
+		width:100px;
+		}
+
+	.titles {
+		text-align: center;
+		font-family: rift, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		color:rgb(242,109,99);
+		padding-top:3vw;
+		padding-bottom:3vw;
+		font-size:250%;
+		}
+	.artists {
+		font-family: urw-din, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		text-align: center;
+		color:rgb(242,109,99);
+		line-height: 125%;
+		font-size: 100%;
+		padding-bottom: 3%;
+		padding-left: 1vw;
+		padding-right: 1vw;
+	}
+	.product {
+		width:200px;
+	}
+	.item-description {
+		text-align: center;
+	}
+	.item-name {
+		font-family: urw-din, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 13px;
+		color: rgb(242,109,99);
+	}
+
+	.price {
+		font-family: urw-din, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size:15px;
+		color: rgb(242,109,99);
+	}
+	.brand {
+		font-family: urw-din, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size:13px;
+		color: rgb(242,109,99);
+	}
+
+	}
 
