@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/jva4gxc.css">
 	<link rel="stylesheet" href="https://use.typekit.net/jva4gxc.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
@@ -24,10 +26,10 @@
             <div class="hamburger"></div>
         </div>
         <div class="menu-mobile">
-            <a href="subpage-one.html">Artists</a>
-            <a href="subpage-two.html">Accessories</a>
-            <a href="subpage-three.html">Events</a>
-        </div>          
+            <a class="options" href="subpage-one.html">Artists</a>
+            <a class="options" href="subpage-two.html">Accessories</a>
+            <a class="options" href="subpage-three.html">Events</a>
+        </div>       
          <div class="menu-desktop">
         	<a class="options" href="subpage-one.html">Artists</a>
             <a class="options" href="subpage-two.html">Accessories</a>
@@ -96,64 +98,63 @@
 					</div>
 		</div>
 	</div>	
-
 	<div class= "accessories">
 		<div class="titles">ACCESSORIES</div>
-		<div class="slideshow">
-			<img class="product" src= "images/abstractlandscape.png">
-				<div class="item-description">
-					<div class="item-name">
-						Abstract Landscape 5 Panel Hat
+			<div class="slideshow">
+				<img class="product" src= "images/abstractlandscape.png">
+					<div class="item-description">
+						<div class="item-name">
+							Abstract Landscape 5 Panel Hat
+						</div>
+						<div class="price">
+							$28
+						</div>
+						<div class="brand">
+							SEEKERS/FINDERS
+						</div>
 					</div>
-					<div class="price">
-						$28
+			</div>
+			<div class="slideshow">
+				<img class="product" src= "images/dailytote.png">
+					<div class="item-description">
+						<div class="item-name">
+							Daily Tote
+						</div>
+						<div class="price">
+							$69
+						</div>
+						<div class="brand">
+							FINDER GOODS
+						</div>
 					</div>
-					<div class="brand">
-						SEEKERS/FINDERS
+			</div>
+			<div class="slideshow">
+				<img class="product" src= "images/landscapewallet.png">
+					<div class="item-description">
+						<div class="item-name">
+							Perf'd Landscape Wallet
+						</div>
+						<div class="price">
+							$125
+						</div>
+						<div class="brand">
+							WOOLY
+						</div>
 					</div>
-				</div>
-		</div>
-		<div class="slideshow">
-			<img class="product" src= "images/dailytote.png">
-				<div class="item-description">
-					<div class="item-name">
-						Daily Tote
-					</div>
-					<div class="price">
-						$69
-					</div>
-					<div class="brand">
-						FINDER GOODS
-					</div>
-				</div>
-		</div>
-		<div class="slideshow">
-			<img class="product" src= "images/landscapewallet.png">
-				<div class="item-description">
-					<div class="item-name">
-						Perf'd Landscape Wallet
-					</div>
-					<div class="price">
-						$125
-					</div>
-					<div class="brand">
-						WOOLY
-					</div>
-				</div>
-		</div>
-		<div class="slideshow">
-			<img class="product" src= "images/changepurse.png">
-				<div class="item-description">
-					<div class="item-name">
-						Small Leather Change Purse
-					</div>
-					<div class="price">
-						$30
-					</div>
-					<div class="brand">
-						CHLOE DERDERIAN-GILBERT
-					</div>
-		</div>
+			</div>
+			<div class="slideshow">
+				<img class="product" src= "images/changepurse.png">
+					<div class="item-description">
+						<div class="item-name">
+							Small Leather Change Purse
+						</div>
+						<div class="price">
+							$30
+						</div>
+						<div class="brand">
+							CHLOE DERDERIAN-GILBERT
+						</div>
+			</div>
 	</div>
 
 	</main>
@@ -168,5 +169,6 @@
   	crossorigin="anonymous"></script>
   	<!-- link for your script file -->
   	<script src="scripts/script.js"></script>
+  	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
