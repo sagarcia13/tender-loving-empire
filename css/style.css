@@ -209,6 +209,16 @@ footer {
 	.events:hover {
 		animation: rotation 3.6s infinite linear;
 	}
+
+	.event-calendar {
+		text-align:center;
+		padding-bottom: 10px;
+	}
+
+	.calendar {
+		width:70vw;
+	}
+
 	@keyframes rotation {
 		  from {
 		    transform: rotate(0deg);
