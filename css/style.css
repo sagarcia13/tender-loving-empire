@@ -1,3 +1,134 @@
+.landing-page {
+	background-color: rgb(242,109,99);
+	text-align:right;
+}
+.landing-logo {
+	width:74vw;
+	padding-left:1vw;
+}
+
+.marquee {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.marquee {
+  animation: moveSlideshow 14s linear infinite;
+}
+
+.marquee:hover {
+  opacity: 1;
+}
+.marquee2 {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top:1vw;
+}
+.marquee2 {
+  animation: moveSlideshow 15s linear infinite;
+}
+
+.marquee:hover {
+  opacity: 1;
+}
+
+.marquee3 {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top:1vw;
+}
+.marquee3 {
+  animation: moveSlideshow 20s linear infinite;
+}
+
+.marquee:hover {
+  opacity: 1;
+}
+.marquee4 {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top:1vw;
+}
+.marquee4 {
+  animation: moveSlideshow 17s linear infinite;
+}
+
+.marquee:hover {
+  opacity: 1;
+}
+.marquee5 {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top:1vw;
+}
+.marquee5 {
+  animation: moveSlideshow 19s linear infinite;
+}
+
+.marquee:hover {
+  opacity: 1;
+}
+.marquee6 {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top:1vw;
+}
+.marquee6 {
+  animation: moveSlideshow 13s linear infinite;
+}
+
+.marquee:hover {
+  opacity: 1;
+}
+.marquee7 {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top:1vw;
+}
+.marquee7 {
+  animation: moveSlideshow 19s linear infinite;
+}
+
+.marquee:hover {
+  opacity: 1;
+}
+.marquee8 {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top:1vw;
+}
+.marquee8 {
+  animation: moveSlideshow 18s linear infinite;
+}
+
+.marquee:hover {
+  opacity: 1;
+}
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+
+
+Resources1×0.5×0.25×Rerun
+
 
 body {
 	background-color:white;
