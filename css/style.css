@@ -3,7 +3,7 @@
 	text-align:right;
 }
 .landing-logo {
-	width:74vw;
+	width:76vw;
 	padding-left:1vw;
 }
 
@@ -24,7 +24,7 @@
   top: 0;
   left: 0;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-top:1vw;
 }
 .marquee2 {
@@ -39,7 +39,7 @@
   top: 0;
   left: 0;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-top:1vw;
 }
 .marquee3 {
@@ -53,7 +53,7 @@
   top: 0;
   left: 0;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-top:1vw;
 }
 .marquee4 {
@@ -67,21 +67,22 @@
   top: 0;
   left: 0;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-top:1vw;
 }
 .marquee5 {
-  animation: moveSlideshow 19ss linear infinite;
+  animation: moveSlideshow 14s linear infinite;
 }
 
 .marquee:hover {
   opacity: 1;
 }
+
 .marquee6 {
   top: 0;
   left: 0;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-top:1vw;
 }
 .marquee6 {
@@ -95,7 +96,7 @@
   top: 0;
   left: 0;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-top:1vw;
 }
 .marquee7 {
@@ -109,7 +110,7 @@
   top: 0;
   left: 0;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-top:1vw;
 }
 .marquee8 {
@@ -219,10 +220,26 @@ footer {
 	color:rgb(242,109,99);
 	line-height: 125%;
 	font-size: 17px;
-	padding-bottom: 3%;
 	padding-left: 10px;
 	padding-right: 10px;
+  	overflow:hidden;
+  	animation: 2s slide-right;
 }
+
+
+@keyframes slide-right {
+  from {
+    margin-left: 75%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
 .slideshow {
 	text-align:center;
 }
@@ -406,6 +423,12 @@ footer {
 		-ms-transform: translate (-50%, -50%);
 		transform: translate(-50%, -50%);
 		text-align:center;
+	}
+
+	.videos {
+		 width:100; 
+		 height:100;
+		 text-align:center;
 	}
 
 	footer{
