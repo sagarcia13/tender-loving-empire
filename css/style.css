@@ -425,10 +425,13 @@ footer {
 		}
 	
 	.desktop-grid {
+		padding-left:1vw;
+		padding-right:1vw;
 		display:none;
-		animation: 2s slide;
+		animation: 2s records;
 	}
-	@keyframes slide{
+
+	@keyframes records{
 	  from {
 	    margin-left: 75%;
 	    width: 100%; 
@@ -439,8 +442,6 @@ footer {
 	    width: 100%;
 	  }
 	}
-
-	.desktop-grid
 
 
 	.artists {
